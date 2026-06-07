@@ -7,14 +7,8 @@ import toast from "react-hot-toast";
 
 const App = () => {
   return (
-    <div data-theme="retro">
-      <button className="btn btn-outline">click me</button>
-      <button className="btn btn-neutral">click me</button>
-      <button className="btn btn-primary">click me</button>
-      <button className="btn btn-accent">click me</button>
-      <button className="btn btn-info">click me</button>
-      <button className="btn btn-warning">click me</button>
-      <button className="btn btn-error">click me</button>
+    <div className="relative h-full w-full">
+      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#FFF7D6_15%,#E4C59E_50%,#C08B5C_80%,#5C4033_100%)]" />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
